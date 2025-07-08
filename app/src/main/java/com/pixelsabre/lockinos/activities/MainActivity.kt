@@ -13,8 +13,8 @@ import dev.hotwire.navigation.tabs.HotwireBottomNavigationController
 import dev.hotwire.navigation.tabs.navigatorConfigurations
 import dev.hotwire.navigation.util.applyDefaultImeWindowInsets
 
-//const val baseURL = "https://www.lockinos.com"
-const val baseURL = "http://10.0.2.2:3000"
+const val baseURL = "https://www.lockinos.com"
+//const val baseURL = "http://10.0.2.2:3000"
 
 class MainActivity : HotwireActivity() {
     private lateinit var bottomNavigationController: HotwireBottomNavigationController
