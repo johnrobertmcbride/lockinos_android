@@ -19,3 +19,17 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Preserve Hotwire library classes and their behavior
+-keep class dev.hotwire.** { *; }
+-keepclassmembers class dev.hotwire.** { *; }
+-keepattributes *Annotation*
+
+# Preserve WebView related classes that Hotwire might use
+-keep class android.webkit.** { *; }
+-keepclassmembers class android.webkit.** { *; }
+
+# Preserve any user agent related methods
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
