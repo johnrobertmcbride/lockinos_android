@@ -38,5 +38,6 @@ class LockInOSApplication : Application() {
         )
 
         Hotwire.config.jsonConverter = KotlinXJsonConverter()
+        Hotwire.config.applicationUserAgentPrefix = "Hotwire Native Android; Turbo Native Android;"
     }
 }
