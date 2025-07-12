@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "886948723515",
+    "project_id": "lock-in-os",
+    "storage_bucket": "lock-in-os.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886948723515:android:b821e1319ba8d59c58d51e",
+        "android_client_info": {
+          "package_name": "com.pixelsabre.lockinos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEgd_EpBGHRn-Cxxi1WBl0Hpyp6aPCnSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

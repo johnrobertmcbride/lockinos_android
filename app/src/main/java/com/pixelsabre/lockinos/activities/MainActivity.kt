@@ -25,12 +25,6 @@ class MainActivity : HotwireActivity() {
         setContentView(R.layout.activity_main)
         findViewById<View>(R.id.main).applyDefaultImeWindowInsets()
 
-        Hotwire.loadPathConfiguration(
-            context = this,
-            location = PathConfiguration.Location(
-                remoteFileUrl = "$baseURL/configurations/android_v1.json"
-            )
-        )
         initialiseBottomTabs()
     }
 
