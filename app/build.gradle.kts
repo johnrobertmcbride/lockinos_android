@@ -14,14 +14,26 @@ android {
         applicationId = "com.pixelsabre.lockinos"
         minSdk = 28
         targetSdk = 36
-        versionCode = 7
-        versionName = "1.6"
+        versionCode = 8
+        versionName = "1.7"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+        debug {
+            buildConfigField(
+                type ="String",
+                name = "BASE_URL",
+                value = "\"http://10.0.2.2:3000\""
+            )
+        }
         release {
+            buildConfigField(
+                type ="String",
+                name = "BASE_URL",
+                value = "\"https://www.lockinos.com\""
+            )
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -30,14 +42,15 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = "11"
+    kotlin {
+        jvmToolchain(17)
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 

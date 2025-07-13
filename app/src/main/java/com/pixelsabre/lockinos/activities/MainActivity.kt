@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.pixelsabre.lockinos.R
 import com.pixelsabre.lockinos.models.mainTabs
+import com.pixelsabre.lockinos.BuildConfig
 import dev.hotwire.core.config.Hotwire
 import dev.hotwire.core.turbo.config.PathConfiguration
 import dev.hotwire.navigation.activities.HotwireActivity
@@ -13,8 +14,7 @@ import dev.hotwire.navigation.tabs.HotwireBottomNavigationController
 import dev.hotwire.navigation.tabs.navigatorConfigurations
 import dev.hotwire.navigation.util.applyDefaultImeWindowInsets
 
-const val baseURL = "https://www.lockinos.com"
-//const val baseURL = "http://10.0.2.2:3000"
+const val baseURL = BuildConfig.BASE_URL
 
 class MainActivity : HotwireActivity() {
     private lateinit var bottomNavigationController: HotwireBottomNavigationController
