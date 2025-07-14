@@ -15,14 +15,6 @@ class NotificationTokenComponent(
         get() = bridgeDelegate.destination.fragment as WebFragment
 
     override fun onReceive(message: Message) {
-        val composeView = ComposeView(fragment.requireContext()).apply {
-            setContent {
-                Text("Sign in")
-            }
-        }
-        val toolbar = fragment.toolbarForNavigation()
-        toolbar?.addView(composeView)
-
         fragment.requestNotificationPermission()
     }
 }
