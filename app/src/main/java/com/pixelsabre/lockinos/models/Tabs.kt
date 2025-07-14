@@ -33,7 +33,7 @@ private val settings = HotwireBottomTab(
     )
 )
 val mainTabs = listOf(
-    habits,
     coach,
+    habits,
     settings
 )
