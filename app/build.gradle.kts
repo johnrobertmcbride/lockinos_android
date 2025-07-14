@@ -14,8 +14,8 @@ android {
         applicationId = "com.pixelsabre.lockinos"
         minSdk = 28
         targetSdk = 36
-        versionCode = 9
-        versionName = "1.8"
+        versionCode = 12
+        versionName = "1.11"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -61,8 +61,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation("dev.hotwire:core:1.2.3")
-    implementation("dev.hotwire:navigation-fragments:1.2.3")
+    implementation("dev.hotwire:core:1.2.0")
+    implementation("dev.hotwire:navigation-fragments:1.2.0")
     implementation(platform("com.google.firebase:firebase-bom:33.12.0"))
     implementation("com.google.firebase:firebase-messaging")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1")
