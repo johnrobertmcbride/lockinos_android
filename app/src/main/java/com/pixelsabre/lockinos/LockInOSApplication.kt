@@ -6,6 +6,7 @@ import com.pixelsabre.lockinos.activities.baseURL
 import dev.hotwire.core.config.Hotwire
 import dev.hotwire.core.turbo.config.PathConfiguration
 import com.pixelsabre.lockinos.components.NotificationTokenComponent
+import com.pixelsabre.lockinos.fragments.RefreshAppFragment
 import com.pixelsabre.lockinos.fragments.WebFragment
 import dev.hotwire.navigation.config.registerBridgeComponents
 import dev.hotwire.core.bridge.BridgeComponentFactory
@@ -28,6 +29,7 @@ class LockInOSApplication : Application() {
 
         Hotwire.registerFragmentDestinations(
             WebFragment::class,
+            RefreshAppFragment::class
         )
 
         Hotwire.registerBridgeComponents(

@@ -28,6 +28,10 @@ class MainActivity : HotwireActivity() {
         initialiseBottomTabs()
     }
 
+    fun resetNavigators() {
+        delegate.resetNavigators()
+    }
+
     override fun navigatorConfigurations() = mainTabs.navigatorConfigurations
 
     private fun initialiseBottomTabs() {
